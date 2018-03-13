@@ -13,7 +13,7 @@
 ![](/assets/import2.png)
 
 ```
-<input type="submit" class="btn" id="CommonLogin" value="登录">1
+<input type="submit" class="btn" id="CommonLogin" value="登录">
 ```
 
 
