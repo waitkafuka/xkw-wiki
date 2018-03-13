@@ -1,11 +1,12 @@
-# 主搜索框
+# 输入框
 
-![](http://xkw-18913.oss-cn-hangzhou.aliyuncs.com/wiki/QQ20180309-114532@2x.png)  
+![](/assets/import.png)
+
 ```html
-<div class="search-ipt-group">
-    <input id="SearchKey" name="keyword" tosearchsite="1" autocomplete="off" type="text" class="main-search-ipt" placeholder="请输入关键字">
-    <span class="main-search-btn" id="SearchButton">
-        <i class="iconfont icon-sousuo "></i>
-    </span>
-</div>
+<div class="userName">
+    <input id="username" name="username" class="text username" tabindex="1" placeholder="手机号/邮箱/用户名" type="text" value="" maxlength="40" autocomplete="off">
+</div> 1
 ```
+
+
+
