@@ -10,7 +10,7 @@
 
 ![](/assets/impor1t.png)
 
-```
+```html
 <div class="header">
         <div class="wrapper clearfix head">
             <a href="http://www.zxxk.com" target="_blank" class="fl hd-logo"></a>
@@ -82,7 +82,7 @@
     </div>
 ```
 
-```
+```css
 /* head */
 .head a:hover{ text-decoration:none;}
 .hd-guide,.sina,.blog{background:url(../images/hd-icon2.png) no-repeat;}
@@ -114,14 +114,16 @@
 
 # 专题底部
 
-```
+![](/assets/import3.png)
+
+```html
 <div class="footer">
     Copyright 2003-2018 All Rights Reserved. 学科网版权所有 京ICP备12013499<br>
 学科网 zxxk.com 版权所有 京ICP备12013499号 京ICP证080135号 北京市公安局海淀分局备案号：1101081948
 </div>
 ```
 
-```
+```css
 /**footer**/
 .footer{ text-align:center; color:#fff; line-height:26px; padding:45px 0;}
 /**footer end**/
