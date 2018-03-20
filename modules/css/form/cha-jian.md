@@ -189,6 +189,12 @@ particlesJS('particles-js', particleSet);
 效果：
 
 <div id="particles"></div>
+<style>
+    #particles{
+        width: 100%;
+        height: 200px;
+    }
+</style>
 <script type="text/javascript" src="https://cdn.bootcss.com/particles.js/2.0.0/particles.js"></script>
 <script type="text/javascript">
     var particleSet = {
