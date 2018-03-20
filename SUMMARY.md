@@ -6,6 +6,7 @@
   * [全局样式](modules/css/globalcss.md)
   * [表单](modules/css/form.md)
   * [插件](modules/css/form/cha-jian.md)
+    * jquery插件
 * [设计规范](modules/design/design.md)
   * [章节1](modules/design/design1.md)
   * [章节2](modules/design/design2.md)
