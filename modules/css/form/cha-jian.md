@@ -186,5 +186,7 @@ particlesJS('particles-js', particleSet);
 | `interactivity.events.modes.push.particles_nb` | number | `4` |
 | `retina_detect` | boolean | `true` / `false` |
 
+效果：
 
+&lt;b&gt;粗体&lt;/b&gt;
 
