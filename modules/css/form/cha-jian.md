@@ -188,7 +188,7 @@ particlesJS('particles-js', particleSet);
 
 效果：
 
-<div id="particles"></div>
+<div id="particles">12121</div>
 <style>
     #particles{
         width: 100%;
