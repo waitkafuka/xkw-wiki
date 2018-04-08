@@ -281,5 +281,35 @@ initLeftNav: function() {
 }
 ```
 
+# 资料类型图标-PC端
+
+![](/assets/impor2t.png)
+
+```css
+.type-icon {float:left;display:inline-block;width:57px;height:70px;background:url("../../assets/img/type-icon.png") no-repeat;position:relative}
+.type-icon.doc {background-position:0 0}
+.type-icon.xls {background-position:0 -70px}
+.type-icon.ppt {background-position:0 -140px}
+.type-icon.swf {background-position:0 -210px}
+.type-icon.mp3 {background-position:0 -280px}
+.type-icon.flv {background-position:0 -210px}
+.type-icon.pdf {background-position:0 -350px}
+.type-icon.rar {background-position:0 -420px}
+.type-icon.other {background-position:0 -490px}
+.type-icon i {background-image:url("../../assets/img/type_num.png");background-repeat:no-repeat;background-position:center center;position:absolute;width:36px;height:20px;left:-3px;top:5px}
+.type-icon i.type-1 {background-position:0 0}
+.type-icon i.type-2 {background-position:0 -27px}
+.type-icon i.type-3 {background-position:0 -55px}
+.type-icon i.type-4 {background-position:0 -82px}
+.type-icon i.type-6 {background-position:0 -109px}
+.type-icon i.type-7 {background-position:0 -137px}
+.type-icon i.type-8 {background-position:0 -164px}
+.type-icon i.type-9 {background-position:0 -191px}
+```
+
+```html
+<span class="type-icon doc"><i class="type-1"></i></span>
+```
+
 
 
