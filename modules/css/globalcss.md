@@ -311,5 +311,17 @@ initLeftNav: function() {
 <span class="type-icon doc"><i class="type-1"></i></span>
 ```
 
+# 资料类型图标-手机端
 
+![](/assets/import1.png)
+
+```css
+.icon-pdf   .icon-word .icon-ppt .icon-zip .icon-excel  .icon-q icon-shipin icon-ziyuan
+```
+
+```html
+    <span class="mater-type"><i class="iconfont icon-word"></i></span>
+```
+
+**备注：需引入iconfont字体，所属项目为M\_zxxk项目。**
 
