@@ -45,7 +45,7 @@
             "prefix": "http://localhost:4000/"
         },
         "edit-link": {
-            "base": "https://github.com/waitkafuka/xkw-wiki",
+            "base": "https://legacy.gitbook.com/book/waitkafuka/wiki/edit#/edit/master/",
             "label": "编辑此页"
         },
         "anchor-navigation-ex": {
