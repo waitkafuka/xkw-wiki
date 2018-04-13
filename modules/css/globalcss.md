@@ -325,3 +325,39 @@ initLeftNav: function() {
 
 **备注：需引入iconfont字体，所属项目为M\_zxxk项目。**
 
+# 资料类型图标-PC端-14像素
+
+![](/assets/1import.png)
+
+```html
+<span class="source-type-icon14">
+                                        <i class="iconfont icon-word"></i>
+                                    </span>
+                                    <span class="source-type-icon14">
+                                        <i class="iconfont icon-pdf"></i>
+                                    </span>
+                                    <span class="source-type-icon14">
+                                        <i class="iconfont icon-ppt"></i>
+                                    </span>
+                                    <span class="source-type-icon14">
+                                        <i class="iconfont icon-zip"></i>
+                                    </span>
+                                    <span class="source-type-icon14">
+                                        <i class="iconfont icon-excel"></i>
+                                    </span>
+                                    <span class="source-type-icon14">
+                                        <i class="iconfont icon-q"></i>
+                                    </span>
+                                    <span class="source-type-icon14">
+                                        <i class="iconfont icon-shipin"></i>
+                                    </span>
+                                    <span class="source-type-icon14">
+                                        <i class="iconfont icon-mp3"></i>
+                                    </span>
+                                    <span class="source-type-icon14">
+                                        <i class="iconfont icon-ziyuan"></i>
+                                    </span>
+```
+
+
+
