@@ -331,32 +331,32 @@ initLeftNav: function() {
 
 ```html
 <span class="source-type-icon14">
-                                        <i class="iconfont icon-word"></i>
-                                    </span>
-                                    <span class="source-type-icon14">
-                                        <i class="iconfont icon-pdf"></i>
-                                    </span>
-                                    <span class="source-type-icon14">
-                                        <i class="iconfont icon-ppt"></i>
-                                    </span>
-                                    <span class="source-type-icon14">
-                                        <i class="iconfont icon-zip"></i>
-                                    </span>
-                                    <span class="source-type-icon14">
-                                        <i class="iconfont icon-excel"></i>
-                                    </span>
-                                    <span class="source-type-icon14">
-                                        <i class="iconfont icon-q"></i>
-                                    </span>
-                                    <span class="source-type-icon14">
-                                        <i class="iconfont icon-shipin"></i>
-                                    </span>
-                                    <span class="source-type-icon14">
-                                        <i class="iconfont icon-mp3"></i>
-                                    </span>
-                                    <span class="source-type-icon14">
-                                        <i class="iconfont icon-ziyuan"></i>
-                                    </span>
+    <i class="iconfont icon-word"></i>
+</span>
+<span class="source-type-icon14">
+    <i class="iconfont icon-pdf"></i>
+</span>
+<span class="source-type-icon14">
+    <i class="iconfont icon-ppt"></i>
+</span>
+<span class="source-type-icon14">
+    <i class="iconfont icon-zip"></i>
+</span>
+<span class="source-type-icon14">
+    <i class="iconfont icon-excel"></i>
+</span>
+<span class="source-type-icon14">
+    <i class="iconfont icon-q"></i>
+</span>
+<span class="source-type-icon14">
+    <i class="iconfont icon-shipin"></i>
+</span>
+<span class="source-type-icon14">
+    <i class="iconfont icon-mp3"></i>
+</span>
+<span class="source-type-icon14">
+    <i class="iconfont icon-ziyuan"></i>
+</span>
 ```
 
 
