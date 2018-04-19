@@ -327,7 +327,7 @@ initLeftNav: function() {
 
 # 资料类型图标-PC端-14像素
 
-![](/assets/icon14.png)
+![](/assets/icon-14.png)
 
 ```html
 <span class="source-type-icon14">
