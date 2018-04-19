@@ -327,9 +327,12 @@ initLeftNav: function() {
 
 # 资料类型图标-PC端-14像素
 
-![](/assets/1import.png)
+![](/assets/icon14.png)
 
 ```html
+<span class="source-type-icon14">
+    <i class="iconfont icon-img"></i>
+</span>
 <span class="source-type-icon14">
     <i class="iconfont icon-word"></i>
 </span>
