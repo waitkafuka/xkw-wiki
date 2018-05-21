@@ -1,16 +1,18 @@
-# 学科网公共头部
+# 全局样式
+
+## 学科网公共头部
 
 ![](http://xkw-18913.oss-cn-hangzhou.aliyuncs.com/wiki/QQ20180309-161110@2x.png)
 
-```html
+```markup
 <script src="http://www.zxxk.com/service/js/header.js" type="text/javascript" charset="utf-8"></script>
 ```
 
-# 专题的公共头部
+## 专题的公共头部
 
-![](/assets/impor1t.png)
+![](../.gitbook/assets/impor1t.png)
 
-```html
+```markup
 <div class="header">
         <div class="wrapper clearfix head">
             <a href="http://www.zxxk.com" target="_blank" class="fl hd-logo"></a>
@@ -112,11 +114,11 @@
 /**end head**/
 ```
 
-# 专题底部
+## 专题底部
 
-![](/assets/import3.png)
+![](../.gitbook/assets/import3.png)
 
-```html
+```markup
 <div class="footer">
     Copyright 2003-2018 All Rights Reserved. 学科网版权所有 京ICP备12013499<br>
 学科网 zxxk.com 版权所有 京ICP备12013499号 京ICP证080135号 北京市公安局海淀分局备案号：1101081948
@@ -129,11 +131,11 @@
 /**footer end**/
 ```
 
-# 右侧顶部按钮
+## 右侧顶部按钮
 
 ![](http://xkw-18913.oss-cn-hangzhou.aliyuncs.com/wiki/panel.png)
 
-```html
+```markup
 <div class="fn-rt func-icons">
     <a href="http://www.zxxk.com/wxt/v3/source/center" target="_blank">
         <i class="iconfont icon-wangxiaotong"></i>
@@ -153,11 +155,11 @@
 </div>
 ```
 
-# 购物篮
+## 购物篮
 
 ![](http://xkw-18913.oss-cn-hangzhou.aliyuncs.com/wiki/QQ20180309-115347@2x.png)
 
-```html
+```markup
 <div class="source-bucket-wrap" id="divSoftCart">
     <div class="source-bucket">
         <i class="iconfont icon-gouwuche"></i>
@@ -179,19 +181,19 @@
 </div>
 ```
 
-# 竖分割线
+## 竖分割线
 
 ![](http://xkw-18913.oss-cn-hangzhou.aliyuncs.com/wiki/QQ20180309-161815@2x.png)
 
-```html
+```markup
 <span class="vertical-line"></span>
 ```
 
-# 首页楼层标题和导航
+## 首页楼层标题和导航
 
 ![](http://xkw-18913.oss-cn-hangzhou.aliyuncs.com/wiki/QQ20180309-162146@2x.png)
 
-```html
+```markup
 <span class="title-tips">名校资源</span>
 <ul class="row-top-nav">
         <li class="mxzy-province areaid14">苏</li>
@@ -223,13 +225,13 @@
 </ul>
 ```
 
-# 楼层快捷导航
+## 楼层快捷导航
 
 ![](http://xkw-18913.oss-cn-hangzhou.aliyuncs.com/wiki/QQ20180309-162813@2x.png)
 
 html：
 
-```html
+```markup
 <div class="gofloor" style="display: block;">
     <p target="djtj" class="">推荐</p>
     <p target="mxzy" class="">名校</p>
@@ -281,9 +283,9 @@ initLeftNav: function() {
 }
 ```
 
-# 资料类型图标-PC端
+## 资料类型图标-PC端
 
-![](/assets/impor2t.png)
+![](../.gitbook/assets/impor2t.png)
 
 ```css
 .type-icon {float:left;display:inline-block;width:57px;height:70px;background:url("../../assets/img/type-icon.png") no-repeat;position:relative}
@@ -307,29 +309,17 @@ initLeftNav: function() {
 .type-icon i.type-9 {background-position:0 -191px}
 ```
 
-```html
+```markup
 <span class="type-icon doc"><i class="type-1"></i></span>
 ```
 
-# 资料类型图标-手机端
+## 
 
-![](/assets/import1.png)
+## 资料类型图标-PC端-14像素
 
-```css
-.icon-pdf   .icon-word .icon-ppt .icon-zip .icon-excel  .icon-q icon-shipin icon-ziyuan
-```
+![](../.gitbook/assets/icon-14.png)
 
-```html
-    <span class="mater-type"><i class="iconfont icon-word"></i></span>
-```
-
-**备注：需引入iconfont字体，所属项目为M\_zxxk项目。**
-
-# 资料类型图标-PC端-14像素
-
-![](/assets/icon-14.png)
-
-```html
+```markup
 <span class="source-type-icon14">
     <i class="iconfont icon-img"></i>
 </span>
@@ -362,5 +352,19 @@ initLeftNav: function() {
 </span>
 ```
 
+## 资料类型图标-手机端
 
+![](../.gitbook/assets/import1.png)
+
+```css
+.icon-pdf   .icon-word .icon-ppt .icon-zip .icon-excel  .icon-q icon-shipin icon-ziyuan
+```
+
+```markup
+    <span class="mater-type"><i class="iconfont icon-word"></i></span>
+```
+
+**备注：需引入iconfont字体，所属项目为M\_zxxk项目。**
+
+## 
 

@@ -1,12 +1,12 @@
-# Summary
+# Table of contents
 
 * [知识库介绍](README.md)
-* [MarkDown常用语法参考](modules/markdown/markdown.md)
-* [样式组件](modules/css/css.md)
-  * [全局样式](modules/css/globalcss.md)
-  * [表单](modules/css/form.md)
-  * [插件](modules/css/form/cha-jian.md)
-* [设计规范](modules/design/design.md)
-  * [章节1](modules/design/design1.md)
-  * [章节2](modules/design/design2.md)
+* [MarkDown常用语法参考](markdown-chang-yong-yu-fa-can-kao.md)
+* [样式组件](yang-shi-zu-jian/README.md)
+  * [全局样式](yang-shi-zu-jian/quan-ju-yang-shi.md)
+  * [表单](yang-shi-zu-jian/biao-dan.md)
+  * [插件](yang-shi-zu-jian/cha-jian.md)
+* [设计规范](she-ji-gui-fan/README.md)
+  * [章节1](she-ji-gui-fan/zhang-jie-1.md)
+  * [章节2](she-ji-gui-fan/zhang-jie-2.md)
 
