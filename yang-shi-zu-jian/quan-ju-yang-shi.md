@@ -354,10 +354,10 @@ initLeftNav: function() {
 
 ## 资料类型图标-手机端
 
-![](../.gitbook/assets/import1.png)
+![](../.gitbook/assets/image.png)
 
 ```css
-.icon-pdf   .icon-word .icon-ppt .icon-zip .icon-excel  .icon-q icon-shipin icon-ziyuan
+.icon-word .icon-excel .icon-ppt .icon-zip .icon-pdf .icon-mp3 .icon-shipin .icon-img .icon-zuanji .icon-q
 ```
 
 ```markup
