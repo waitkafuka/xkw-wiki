@@ -364,6 +364,11 @@ initLeftNav: function() {
     <span class="mater-type"><i class="iconfont icon-word"></i></span>
 ```
 
+## 资料类型-小程序
+```
+word video ppt img pdf compress excel default gif audio
+```
+
 **备注：需引入iconfont字体，所属项目为M\_zxxk项目。**
 
 ## 
