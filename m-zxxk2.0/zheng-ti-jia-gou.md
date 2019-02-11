@@ -23,5 +23,5 @@ m-zxxk@1.0.0 /Users/zks/code/gitlab/m-zxxk2.0/web
 ```
 
 生产环境中新旧系统之间的关系如下：  
-![](../assets/img/m-zxxk2.0-network.jpg)
+![](http://wcenter.oss-cn-shanghai.aliyuncs.com/xkw/m-zxxk2.0-network.jpg)
 
