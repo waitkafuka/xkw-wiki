@@ -13,11 +13,14 @@ vue部分采用`vue-cli3`的脚手架进行搭建，具体技术细节可参考v
 采用`nginx`反向代理配置实现新旧系统之间的平滑过渡，以及解决cookie传递的共享问题。  
 生产环境发布采用`pm2`来管理和守护线程，在Linux环境下，它也可以用来记录ssr后端渲染时候的日志。  
 nuxt和vue的关系如下：  
-`m-zxxk@1.0.0 /Users/zks/code/gitlab/m-zxxk2.0/web  
+
+``` 
+m-zxxk@1.0.0 /Users/zks/code/gitlab/m-zxxk2.0/web  
 └─┬ nuxt@2.3.4  
   └─┬ @nuxt/core@2.3.4  
     └─┬ @nuxt/vue-renderer@2.3.4  
-      └── vue@2.5.17`
+      └── vue@2.5.17
+```
 
 生产环境中新旧系统之间的关系如下：  
 ![](../assets/img/m-zxxk2.0-network.jpg)
