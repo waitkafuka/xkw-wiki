@@ -1,3 +1,6 @@
 .gitbook-link{
 	display: none !important;
 }
+.book.font-size-2 .book-body .page-inner section{
+	font-size: 1em;
+}
