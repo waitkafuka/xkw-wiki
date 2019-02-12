@@ -32,7 +32,8 @@ asyncData({params}) {
 `"dev-debug": "node --inspect node_modules/.bin/nuxt"`
 然后启动：
 `npm run dev-debug`
+这时候会通过websocket协议暴漏出9229端口，供vscode监听。
 
 ### 执行调试
-在`vscode`中按`F5`执行调试，然后刷新页面，vscode便会自动进入断点，即可进行单步调试，如图：
+在`vscode`中按`F5`执行调试，此时会监听到9229端口，然后刷新页面，vscode便会自动进入断点，即可进行单步调试，如图：
 ![](../assets/img/soft-debug.png)
