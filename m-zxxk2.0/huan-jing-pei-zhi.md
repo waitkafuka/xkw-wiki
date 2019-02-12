@@ -1,12 +1,13 @@
 # 重要参数
-测试服务器：`10.1.1.40`  
-生产服务器1：`120.55.101.59`   
-端口`3000 `   
-生产服务器2：`121.41.77.58`  
-端口`3000`  
-生产nginx ip: `112.124.52.241`
+## 测试环境
+测试环境`nginx`：`10.1.5.69`   
+测试服务器：`10.1.1.40`，端口`3000`  
+## 生产环境   
+生产环境`nginx`: `112.124.52.241`  
+生产服务器1：`120.55.101.59`，对应内网ip： `10.168.229.119`，端口`3000 `  
+生产服务器2：`121.41.77.58`，对应内网ip：`10.117.209.210`，端口`3000`  
 # Node.js
-不管是开发、测试还是生产环境，都需要首先安装`Node.js`。`Node.js`是后端渲染和npm模块管理的前提。`Node.js`的安装和npm的使用在上次`gulp的使用方法`培训中已经讲过，可以登录oa后下载查看这个课件：<http://oa.zxxk.com/kindeditor/attached/2018/12/file/20181206170422_3934.pptx>
+不管是开发、测试还是生产环境，都需要首先安装`Node.js`。`Node.js`是后端渲染和npm模块管理的重要前提。`Node.js`的安装和npm的使用在上次`gulp的使用方法`培训中已经讲过，可以登录oa后下载查看这个课件：<http://oa.zxxk.com/kindeditor/attached/2018/12/file/20181206170422_3934.pptx>
 
 # 开发环境
 开发环境需要完整模拟测试和生产环境（除了启动方式），需要在本地安装`nginx`，配置`host`和`dns`。
@@ -14,36 +15,28 @@
 `nginx`的`server`节点的配置如下：
 ```
 server {
-        listen       80;
-        server_name m2.zxxk.com;
-            #location /soft/ {
-             #       proxy_pass http://127.0.0.1:3000/soft/;
-            #}
-
-            location /_nuxt/ {
-                    proxy_pass http://127.0.0.1:3000/_nuxt/;
-            }
-
-            location /lib/ {
-                    proxy_pass http://127.0.0.1:3000/lib/;
-            }
-            location /__webpack_hmr/ {
-                    proxy_pass http://127.0.0.1:3000/__webpack_hmr/;
-            }
-
-             location ~* ^/soft/(\d+).html {
-                set $softid $1;
-                if ($query_string ~* "^t=v$" ){
-                proxy_pass http://10.1.1.40:9002/soft/$softid.html;
-                }
-               proxy_pass http://127.0.0.1:3000/soft/$softid;
-            }
-
-            location /api/ {
-                   #proxy_pass http://10.1.14.222:18121/api/;
-                   proxy_pass http://10.1.1.40:18121/api/;
-            }
+    listen       80;
+    server_name m2.zxxk.com;
+    location /_nuxt/ {
+        proxy_pass http://127.0.0.1:3000/_nuxt/;
     }
+
+    location /__webpack_hmr/ {
+        proxy_pass http://127.0.0.1:3000/__webpack_hmr/;
+    }
+
+    location ~* ^/soft/(\d+).html {
+        set $softid $1;
+        if ($query_string ~* "^t=v$" ){
+            proxy_pass http://10.1.1.40:9002/soft/$softid.html;
+        }
+        proxy_pass http://127.0.0.1:3000/soft/$softid;
+    }
+
+    location /api/ {
+        proxy_pass http://10.1.1.40:18121/api/;
+    }
+}
 ```
 ## host配置
 需要在本地`host`文件添加映射：  
@@ -72,7 +65,7 @@ server {
 `pm2 set pm2-logrotate:retain 365`  
 
 ## nginx配置
-测试环境和研一共用一个`nginx`，服务器ip为`10.1.5.69`，所用配置文件和本地的配置相同。
+测试环境和研一共用一个`nginx`，服务器ip为`10.1.5.69`，所用配置文件和本地的配置基本相同。
 
 ## host配置
 需要将测试服务器解析指向测试的`nginx`服务器：
