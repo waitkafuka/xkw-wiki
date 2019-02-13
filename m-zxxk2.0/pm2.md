@@ -12,7 +12,7 @@
 ## 删除服务
 `pm2 delete appName|id|all`
 ## 列出所有进程列表
-**常用**
+**常用**  
 `pm2 list`
 ## 查看所有进程的状态  
 `pm2 status`
