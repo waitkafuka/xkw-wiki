@@ -28,7 +28,7 @@ m-zxxk@1.0.0 /Users/zks/code/gitlab/m-zxxk2.0/web
 采用了`es-lint`进行代码格式的规范和格式化，编译时不规范的代码将会报错，并可结合开发工具进行按要求的格式化，也可以用命令来自动修复不规范的代码。  
 代码规范遵循`vue/recommended`规则。具体规则细节查看<https://vuejs.github.io/eslint-plugin-vue/rules/>  
 ## nginx
-`nginx`用来配置反向代理，同时解决跨域访问的问题。同时解决项目中同时也集成了`CORS`的解决方案。  
+`nginx`用来配置反向代理，同时解决跨域访问的问题(项目中同时也集成了`CORS`的解决方案)。  
 通过配置虚拟映射，`nginx`同时起到了解决新旧M站之间平滑过渡的跳转问题。
 `nginx`在生产环境也起到了负载均衡的作用。  
 具体`nginx`配置请查看`环境配置`章节。
