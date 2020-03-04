@@ -1,0 +1,447 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>pm2常用命令 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../assets/css/style.css">
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../she-ji-gui-fan/" />
+    
+    
+    <link rel="prev" href="debug.html" />
+    
+
+    
+        <link rel="shortcut icon" href='../assets/img/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../assets/img/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="apple-touch-icon" href='../assets/img/favicon.ico'>
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    知识库介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../markdown-chang-yong-yu-fa-can-kao.html">
+            
+                <a href="../markdown-chang-yong-yu-fa-can-kao.html">
+            
+                    
+                    MarkDown常用语法参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../yang-shi-zu-jian/">
+            
+                <a href="../yang-shi-zu-jian/">
+            
+                    
+                    样式组件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../yang-shi-zu-jian/quan-ju-yang-shi.html">
+            
+                <a href="../yang-shi-zu-jian/quan-ju-yang-shi.html">
+            
+                    
+                    全局样式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../yang-shi-zu-jian/biao-dan.html">
+            
+                <a href="../yang-shi-zu-jian/biao-dan.html">
+            
+                    
+                    表单
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../yang-shi-zu-jian/cha-jian.html">
+            
+                <a href="../yang-shi-zu-jian/cha-jian.html">
+            
+                    
+                    插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    M站改版
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="zheng-ti-jia-gou.html">
+            
+                <a href="zheng-ti-jia-gou.html">
+            
+                    
+                    整体架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="huan-jing-pei-zhi.html">
+            
+                <a href="huan-jing-pei-zhi.html">
+            
+                    
+                    环境配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="debug.html">
+            
+                <a href="debug.html">
+            
+                    
+                    调试方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.4" data-path="pm2.html">
+            
+                <a href="pm2.html">
+            
+                    
+                    pm2常用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../she-ji-gui-fan/">
+            
+                <a href="../she-ji-gui-fan/">
+            
+                    
+                    设计规范
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../she-ji-gui-fan/zhang-jie-1.html">
+            
+                <a href="../she-ji-gui-fan/zhang-jie-1.html">
+            
+                    
+                    章节1
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../she-ji-gui-fan/zhang-jie-2.html">
+            
+                <a href="../she-ji-gui-fan/zhang-jie-2.html">
+            
+                    
+                    章节2
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >pm2常用命令</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><a href="#pm2&#x5E38;&#x7528;&#x547D;&#x4EE4;">1. pm2&#x5E38;&#x7528;&#x547D;&#x4EE4;</a></li><ul><li><a href="#&#x542F;&#x52A8;&#x670D;&#x52A1;">1.1. &#x542F;&#x52A8;&#x670D;&#x52A1;</a></li><li><a href="#&#x505C;&#x6B62;&#x670D;&#x52A1;">1.2. &#x505C;&#x6B62;&#x670D;&#x52A1;</a></li><li><a href="#&#x91CD;&#x8F7D;&#x670D;&#x52A1;">1.3. &#x91CD;&#x8F7D;&#x670D;&#x52A1;</a></li><li><a href="#&#x91CD;&#x542F;&#x670D;&#x52A1;">1.4. &#x91CD;&#x542F;&#x670D;&#x52A1;</a></li><li><a href="#&#x5220;&#x9664;&#x670D;&#x52A1;">1.5. &#x5220;&#x9664;&#x670D;&#x52A1;</a></li><li><a href="#&#x5217;&#x51FA;&#x6240;&#x6709;&#x8FDB;&#x7A0B;&#x5217;&#x8868;">1.6. &#x5217;&#x51FA;&#x6240;&#x6709;&#x8FDB;&#x7A0B;&#x5217;&#x8868;</a></li><li><a href="#&#x67E5;&#x770B;&#x6240;&#x6709;&#x8FDB;&#x7A0B;&#x7684;&#x72B6;&#x6001;">1.7. &#x67E5;&#x770B;&#x6240;&#x6709;&#x8FDB;&#x7A0B;&#x7684;&#x72B6;&#x6001;</a></li><li><a href="#&#x76D1;&#x63A7;">1.8. &#x76D1;&#x63A7;</a></li><li><a href="#&#x663E;&#x793A;&#x67D0;&#x4E2A;&#x8FDB;&#x7A0B;&#x7684;&#x8BE6;&#x60C5;">1.9. &#x663E;&#x793A;&#x67D0;&#x4E2A;&#x8FDB;&#x7A0B;&#x7684;&#x8BE6;&#x60C5;</a></li></ul></ul></div><a href="#pm2&#x5E38;&#x7528;&#x547D;&#x4EE4;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="pm2&#x5E38;&#x7528;&#x547D;&#x4EE4;"><a name="pm2&#x5E38;&#x7528;&#x547D;&#x4EE4;" class="anchor-navigation-ex-anchor" href="#pm2&#x5E38;&#x7528;&#x547D;&#x4EE4;"><i class="fa fa-link" aria-hidden="true"></i></a>1. pm2&#x5E38;&#x7528;&#x547D;&#x4EE4;</h1>
+<h2 id="&#x542F;&#x52A8;&#x670D;&#x52A1;"><a name="&#x542F;&#x52A8;&#x670D;&#x52A1;" class="anchor-navigation-ex-anchor" href="#&#x542F;&#x52A8;&#x670D;&#x52A1;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. &#x542F;&#x52A8;&#x670D;&#x52A1;</h2>
+<p><code>pm2 start appName|id|all</code></p>
+<h2 id="&#x505C;&#x6B62;&#x670D;&#x52A1;"><a name="&#x505C;&#x6B62;&#x670D;&#x52A1;" class="anchor-navigation-ex-anchor" href="#&#x505C;&#x6B62;&#x670D;&#x52A1;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. &#x505C;&#x6B62;&#x670D;&#x52A1;</h2>
+<p><code>pm2 stop appName|id|all</code></p>
+<h2 id="&#x91CD;&#x8F7D;&#x670D;&#x52A1;"><a name="&#x91CD;&#x8F7D;&#x670D;&#x52A1;" class="anchor-navigation-ex-anchor" href="#&#x91CD;&#x8F7D;&#x670D;&#x52A1;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. &#x91CD;&#x8F7D;&#x670D;&#x52A1;</h2>
+<p><strong>&#x8BE5;&#x547D;&#x4EE4;&#x5E38;&#x7528;&#xFF0C;&#x56E0;&#x4E3A;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;0s&#x65E0;&#x7F1D;&#x91CD;&#x542F;&#xFF0C;&#x7C7B;&#x4F3C;<code>nginx reload</code></strong><br><code>pm2 reload appName|id|all</code></p>
+<h2 id="&#x91CD;&#x542F;&#x670D;&#x52A1;"><a name="&#x91CD;&#x542F;&#x670D;&#x52A1;" class="anchor-navigation-ex-anchor" href="#&#x91CD;&#x542F;&#x670D;&#x52A1;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. &#x91CD;&#x542F;&#x670D;&#x52A1;</h2>
+<p><strong>&#x8BE5;&#x547D;&#x4EE4;&#x4E0D;&#x5E38;&#x7528;&#xFF0C;&#x4E00;&#x822C;&#x7528;<code>pm2 reload app</code></strong><br><code>pm2 restart appName|id|all</code>  </p>
+<h2 id="&#x5220;&#x9664;&#x670D;&#x52A1;"><a name="&#x5220;&#x9664;&#x670D;&#x52A1;" class="anchor-navigation-ex-anchor" href="#&#x5220;&#x9664;&#x670D;&#x52A1;"><i class="fa fa-link" aria-hidden="true"></i></a>1.5. &#x5220;&#x9664;&#x670D;&#x52A1;</h2>
+<p><code>pm2 delete appName|id|all</code></p>
+<h2 id="&#x5217;&#x51FA;&#x6240;&#x6709;&#x8FDB;&#x7A0B;&#x5217;&#x8868;"><a name="&#x5217;&#x51FA;&#x6240;&#x6709;&#x8FDB;&#x7A0B;&#x5217;&#x8868;" class="anchor-navigation-ex-anchor" href="#&#x5217;&#x51FA;&#x6240;&#x6709;&#x8FDB;&#x7A0B;&#x5217;&#x8868;"><i class="fa fa-link" aria-hidden="true"></i></a>1.6. &#x5217;&#x51FA;&#x6240;&#x6709;&#x8FDB;&#x7A0B;&#x5217;&#x8868;</h2>
+<p><strong>&#x5E38;&#x7528;</strong><br><code>pm2 list</code></p>
+<h2 id="&#x67E5;&#x770B;&#x6240;&#x6709;&#x8FDB;&#x7A0B;&#x7684;&#x72B6;&#x6001;"><a name="&#x67E5;&#x770B;&#x6240;&#x6709;&#x8FDB;&#x7A0B;&#x7684;&#x72B6;&#x6001;" class="anchor-navigation-ex-anchor" href="#&#x67E5;&#x770B;&#x6240;&#x6709;&#x8FDB;&#x7A0B;&#x7684;&#x72B6;&#x6001;"><i class="fa fa-link" aria-hidden="true"></i></a>1.7. &#x67E5;&#x770B;&#x6240;&#x6709;&#x8FDB;&#x7A0B;&#x7684;&#x72B6;&#x6001;</h2>
+<p><code>pm2 status</code></p>
+<h2 id="&#x76D1;&#x63A7;"><a name="&#x76D1;&#x63A7;" class="anchor-navigation-ex-anchor" href="#&#x76D1;&#x63A7;"><i class="fa fa-link" aria-hidden="true"></i></a>1.8. &#x76D1;&#x63A7;</h2>
+<p><strong>&#x5E38;&#x7528;</strong><br><code>pm2 monit</code></p>
+<h2 id="&#x663E;&#x793A;&#x67D0;&#x4E2A;&#x8FDB;&#x7A0B;&#x7684;&#x8BE6;&#x60C5;"><a name="&#x663E;&#x793A;&#x67D0;&#x4E2A;&#x8FDB;&#x7A0B;&#x7684;&#x8BE6;&#x60C5;" class="anchor-navigation-ex-anchor" href="#&#x663E;&#x793A;&#x67D0;&#x4E2A;&#x8FDB;&#x7A0B;&#x7684;&#x8BE6;&#x60C5;"><i class="fa fa-link" aria-hidden="true"></i></a>1.9. &#x663E;&#x793A;&#x67D0;&#x4E2A;&#x8FDB;&#x7A0B;&#x7684;&#x8BE6;&#x60C5;</h2>
+<p><code>pm2 show appName|id</code></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="debug.html" class="navigation navigation-prev " aria-label="Previous page: 调试方法">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../she-ji-gui-fan/" class="navigation navigation-next " aria-label="Next page: 设计规范">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"pm2常用命令","level":"1.4.4","depth":2,"next":{"title":"设计规范","level":"1.5","depth":1,"path":"she-ji-gui-fan/README.md","ref":"she-ji-gui-fan/README.md","articles":[{"title":"章节1","level":"1.5.1","depth":2,"path":"she-ji-gui-fan/zhang-jie-1.md","ref":"she-ji-gui-fan/zhang-jie-1.md","articles":[]},{"title":"章节2","level":"1.5.2","depth":2,"path":"she-ji-gui-fan/zhang-jie-2.md","ref":"she-ji-gui-fan/zhang-jie-2.md","articles":[]}]},"previous":{"title":"调试方法","level":"1.4.3","depth":2,"path":"m-zxxk2.0/debug.md","ref":"m-zxxk2.0/debug.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","fontsettings","-lunr","-search","sitemap-general","favicon@^0.0.2","expandable-chapters","search-plus@^0.0.11","edit-link@^2.0.2","sharing-plus@^0.0.2","anchor-navigation-ex@0.1.8"],"styles":{"website":"assets/css/style.css"},"pluginsConfig":{"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"sitemap-general":{"prefix":"http://localhost:4000/"},"fontsettings":{"family":"sans","size":2,"theme":"white"},"highlight":{},"anchor-navigation-ex":{"isRewritePageTitle":true,"isShowTocTitleIcon":true,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"favicon":{"shortcut":"assets/img/favicon.ico","bookmark":"assets/img/favicon.ico","appleTouch":"assets/img/favicon.ico"},"sharing":{"qq":true,"douban":true,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":false},"edit-link":{"label":"编辑此页","base":"https://legacy.gitbook.com/book/waitkafuka/wiki/edit#/edit/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"zh-hans","gitbook":"*"},"file":{"path":"m-zxxk2.0/pm2.md","mtime":"2019-02-13T09:34:48.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-04T07:58:32.966Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+
+    </body>
+</html>
+
