@@ -1,0 +1,59 @@
+{
+    "styles": {
+        "website": "assets/css/style.css"
+    },
+    "language":"zh-hans",
+     "plugins": [
+        "-sharing", 
+        "fontsettings", 
+        "-lunr",
+        "-search",
+        "sitemap-general",
+        "favicon@^0.0.2",
+        "expandable-chapters",
+        "search-plus@^0.0.11",
+        "edit-link@^2.0.2",
+        "sharing-plus@^0.0.2",
+        "anchor-navigation-ex@0.1.8"
+    ],
+     "pluginsConfig": {
+        "favicon": {
+            "shortcut": "assets/img/favicon.ico",
+            "bookmark": "assets/img/favicon.ico",
+            "appleTouch": "assets/img/favicon.ico" 
+        },
+        "sharing": { 
+           "douban": true,
+           "facebook": false,
+           "google": false,
+           "hatenaBookmark": false,
+           "instapaper": false,
+           "line": false,
+           "linkedin": false,
+           "messenger": false,
+           "pocket": false,
+           "qq": true,
+           "qzone": true,
+           "stumbleupon": false,
+           "twitter": false,
+           "viber": false,
+           "vk": false,
+           "weibo": true,
+           "whatsapp": false
+       },
+        "sitemap-general": {
+            "prefix": "http://localhost:4000/"
+        },
+        "edit-link": {
+            "base": "https://legacy.gitbook.com/book/waitkafuka/wiki/edit#/edit/master/",
+            "label": "编辑此页"
+        },
+        "anchor-navigation-ex": {
+            "isRewritePageTitle": true,
+            "isShowTocTitleIcon": true,
+            "tocLevel1Icon": "fa fa-hand-o-right",
+            "tocLevel2Icon": "fa fa-hand-o-right",
+            "tocLevel3Icon": "fa fa-hand-o-right"
+        }
+    }
+}
